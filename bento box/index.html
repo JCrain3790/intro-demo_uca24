@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Bento Box</title>
+  </head>
+  <body>
+    <style>
+      div {
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .holes{
+        height: 90%;
+        width: 90%;
+        background-color: darkred;
+        border-radius: 10px;
+        border: solid;
+      }
+    </style>
+    <div
+      style="display: flex; background-color: red; height: 400px; width: 800px"
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          height: 100%;
+          
+        "
+      >
+        <div style="display: flex; flex-grow: 3; width: 100%"><div class="holes"></div></div>
+        <div style="display: flex; flex-grow: 1; width: 100%"><div class="holes"></div></div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          height: 100%;
+          
+        "
+      >
+      <div style="display: flex; flex-grow: 1; width: 100%;">
+        <div style="display: flex; flex-direction: column; flex-grow: 1; height: 100%;"><div class="holes"></div></div>
+        <div style="display: flex; flex-direction: column; flex-grow: 1; height: 100%;"><div class="holes"></div></div>
+      </div>
+      <div style="display: flex; flex-grow: 2; width: 100%;"><div class="holes"></div></div>
+    </div>
+    </div>
+  </body>
+</html>
