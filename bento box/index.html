@@ -4,13 +4,33 @@
   </head>
   <body>
     <style>
+      body {
+        background-color: lightgrey;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .navbar {
+        border: solid;
+        background-color: black;
+        margin: 1em;
+      }
+
+      .box{
+        display: flex;
+        justify-content: center;
+      }
+
       div {
         justify-content: space-around;
         align-items: center;
         padding: 10px;
       }
 
-      .holes{
+      .holes {
         height: 90%;
         width: 90%;
         background-color: darkred;
@@ -18,6 +38,17 @@
         border: solid;
       }
     </style>
+    <nav class="container navbar">
+      <h1 style="color: linen">Adam Crain - Videography</h1>
+
+      <a href="/chessboard" target="_blank" rel="noopener noreferrer"
+        >Play Chess</a
+      >
+      <a href="/bento box/" target="_blank" rel="noopener noreferrer"
+        >Bento Box</a
+      >
+    </nav>
+    <div class="box">
     <div
       style="display: flex; background-color: red; height: 400px; width: 800px"
     >
@@ -27,11 +58,14 @@
           flex-direction: column;
           flex-grow: 1;
           height: 100%;
-          
         "
       >
-        <div style="display: flex; flex-grow: 3; width: 100%"><div class="holes"></div></div>
-        <div style="display: flex; flex-grow: 1; width: 100%"><div class="holes"></div></div>
+        <div style="display: flex; flex-grow: 3; width: 100%">
+          <div class="holes"></div>
+        </div>
+        <div style="display: flex; flex-grow: 1; width: 100%">
+          <div class="holes"></div>
+        </div>
       </div>
       <div
         style="
@@ -39,15 +73,45 @@
           flex-direction: column;
           flex-grow: 1;
           height: 100%;
-          
         "
       >
-      <div style="display: flex; flex-grow: 1; width: 100%;">
-        <div style="display: flex; flex-direction: column; flex-grow: 1; height: 100%;"><div class="holes"></div></div>
-        <div style="display: flex; flex-direction: column; flex-grow: 1; height: 100%;"><div class="holes"></div></div>
+        <div style="display: flex; flex-grow: 1; width: 100%">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              height: 100%;
+            "
+          >
+            <div class="holes"></div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              height: 100%;
+            "
+          >
+            <div class="holes"></div>
+          </div>
+        </div>
+        <div style="display: flex; flex-grow: 2; width: 100%">
+          <div class="holes"></div>
+        </div>
       </div>
-      <div style="display: flex; flex-grow: 2; width: 100%;"><div class="holes"></div></div>
     </div>
-    </div>
+  </div>
   </body>
+  <footer
+    class="navbar"
+    style="
+      font-family: Arial, Helvetica, sans-serif;
+      color: linen;
+      border-color: black;
+    "
+  >
+    Created by Adam Crain 2024
+  </footer>
 </html>
